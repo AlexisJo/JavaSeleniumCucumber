@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.514">
+    <testcase classname="feature to test google search functionality" name="Validate google search is working" time="2.339">
+        <failure message="unknown error: cannot find Chrome binary&#10;Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'&#10;System info: host: 'PC00006W', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x004187E3+2852835]&#10;&#9;Ordinal0 [0x00305BB1+1727409]&#10;&#9;Ordinal0 [0x001DE4B9+517305]&#10;&#9;Ordinal0 [0x0016CA98+51864]&#10;&#9;Ordinal0 [0x0018D9F7+186871]&#10;&#9;Ordinal0 [0x0018D7FD+186365]&#10;&#9;Ordinal0 [0x0018B70B+177931]&#10;&#9;Ordinal0 [0x00172584+75140]&#10;&#9;Ordinal0 [0x00173650+79440]&#10;&#9;Ordinal0 [0x001735E9+79337]&#10;&#9;Ordinal0 [0x0031AD5C+1813852]&#10;&#9;GetHandleVerifier [0x0053C616+1075574]&#10;&#9;GetHandleVerifier [0x0053C367+1074887]&#10;&#9;GetHandleVerifier [0x00547497+1120247]&#10;&#9;GetHandleVerifier [0x0053CC16+1077110]&#10;&#9;Ordinal0 [0x00313206+1782278]&#10;&#9;Ordinal0 [0x0031C3BB+1819579]&#10;&#9;Ordinal0 [0x0031C523+1819939]&#10;&#9;Ordinal0 [0x00332B45+1911621]&#10;&#9;BaseThreadInitThunk [0x75C8FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77D27A9E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77D27A6E+238]&#10;" type="org.openqa.selenium.WebDriverException"><![CDATA[Given browser window is open................................................failed
+And user is on google search page...........................................skipped
+When user enters a text in search box.......................................skipped
+And hits enter..............................................................skipped
+Then user is navigated to search results....................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'PC00006W', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x004187E3+2852835]
+	Ordinal0 [0x00305BB1+1727409]
+	Ordinal0 [0x001DE4B9+517305]
+	Ordinal0 [0x0016CA98+51864]
+	Ordinal0 [0x0018D9F7+186871]
+	Ordinal0 [0x0018D7FD+186365]
+	Ordinal0 [0x0018B70B+177931]
+	Ordinal0 [0x00172584+75140]
+	Ordinal0 [0x00173650+79440]
+	Ordinal0 [0x001735E9+79337]
+	Ordinal0 [0x0031AD5C+1813852]
+	GetHandleVerifier [0x0053C616+1075574]
+	GetHandleVerifier [0x0053C367+1074887]
+	GetHandleVerifier [0x00547497+1120247]
+	GetHandleVerifier [0x0053CC16+1077110]
+	Ordinal0 [0x00313206+1782278]
+	Ordinal0 [0x0031C3BB+1819579]
+	Ordinal0 [0x0031C523+1819939]
+	Ordinal0 [0x00332B45+1911621]
+	BaseThreadInitThunk [0x75C8FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D27A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77D27A6E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at StepDefinitions.GoogleSearchSteps.browser_is_open(GoogleSearchSteps.java:26)
+	at ✽.browser window is open(file:///C:/Users/ajoaquim/Downloads/SeleniumCucumberBDD-master/SeleniumCucumberBDD-master/CucumberJava/src/test/resources/Features/GoogleSearch.feature:4)
+]]></failure>
+    </testcase>
+</testsuite>

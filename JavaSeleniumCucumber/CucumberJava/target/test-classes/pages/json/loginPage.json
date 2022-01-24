@@ -1,0 +1,7 @@
+{ 
+	"Login Username" : "//*[@id='name']",
+	"Login Password" : "//*[@id='password']",
+	"Login Button" : "//*[@id='login']",
+	"LogOut Button" : "//*[@id='logout']"
+
+}
